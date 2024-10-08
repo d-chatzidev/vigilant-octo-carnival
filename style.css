@@ -1,0 +1,100 @@
+body{
+    font-family:'Roboto';
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+.header{
+    background-color: #1F2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin-right: 10%;
+}
+
+.header h2{
+    margin-left: 10%;
+}
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row; /* This keeps the text on the left and the image on the right */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+/* Add this container to group the text elements together */
+.hero-text {
+    display: flex;
+    flex-direction: column; /* Stack the heading, paragraph, and button vertically */
+    margin-left: 10%;
+}
+
+.hero button {
+    font-family: inherit;
+    max-width: 50%;
+    color: #f9faf8;
+    border-radius: 20px;
+    background-color: #3882f6;
+    font-size: 19px;
+    padding: 12px 37px;
+    margin-top: 20px;
+}
+
+.heroname {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    max-width: 500px;
+    margin-bottom: 0;
+}
+
+.hero p {
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #e5e7eb;
+    margin-top: 10px;
+}
+
+.hero img {
+    width: 30%; 
+    height: auto;
+    margin-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack the text and image vertically */
+        align-items: center; /* Center-align the content */
+        padding: 50px 20px; /* Reduce padding for smaller screens */
+    }
+    
+    .hero img {
+        width: 70%; /* Make the image larger on smaller screens */
+        margin-right: 0; /* Remove the right margin since the image is now below the text */
+        margin-top: 20px; /* Add some space between the text and image */
+    }
+
+    .hero-text {
+        margin-left: 0;
+        align-items: center; /* Center-align the text */
+        text-align: center; /* Center the text content */
+    }
+
+    .hero button {
+        max-width: 100%;
+    }
+}
